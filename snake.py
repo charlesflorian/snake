@@ -16,7 +16,7 @@ class Snake(object):
         
         self.Q = Queue()
         self.Q.enqueue((x,y))
-    
+            
     def setDirection(self, direction):
         """
         N = 0
@@ -57,9 +57,9 @@ class Snake(object):
         if c != BLANK_SQUARE:
             if c == BONUS:
                 # Get longer!
-                raise BonusException
+                raise BonusException()
             else:
-                raise CollisionException
+                raise CollisionException()
         return False
     
     def move(self):
