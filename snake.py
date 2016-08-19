@@ -1,6 +1,6 @@
 from queue import Queue
 from constants import *
-from exceptions import *
+from my_exceptions import *
 
 class Snake(object):
 
@@ -57,9 +57,9 @@ class Snake(object):
         if c != BLANK_SQUARE:
             if c == BONUS:
                 # Get longer!
-                raise BonusException()
+                raise BonusException
             else:
-                raise CollisionException()
+                raise CollisionException
         return False
     
     def move(self):

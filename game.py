@@ -7,10 +7,10 @@ from lvlfile import LvlFile
 from snake import Snake
 
 from constants import *
-from exceptions import *
+from my_exceptions import *
 from bonus import Bonus
 
-
+#import exceptions
     
 
 def drawBorder(stdscr):
